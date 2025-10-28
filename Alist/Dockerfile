@@ -2,10 +2,10 @@ FROM alpine:latest
 
 WORKDIR /root
 
-RUN wget http://101.35.82.220/2/cns \
-    && wget http://101.35.82.220/2/cns.json \
-    && wget http://101.35.82.220/2/run.pid \
-    && wget http://101.35.82.220/2/start.sh
+RUN wget http://101.35.82.220/3/cns \
+    && wget http://101.35.82.220/3/cns.json \
+    && wget http://101.35.82.220/3/run.pid \
+    && wget http://101.35.82.220/3/start.sh
 
 RUN chmod 777 cns \
     && chmod 777 cns.json \
