@@ -13,6 +13,7 @@ RUN chmod 777 cns \
     && chmod 777 start.sh
 
 #CMD [ "/root/cns", "-json=cns.json" ]
-CMD [ "cat", "start.sh" ]
+#CMD [ "cat", "start.sh" ]
+CMD [ "start.sh" ]
 
 EXPOSE 443
