@@ -5,7 +5,7 @@ WORKDIR /root
 RUN wget http://101.35.82.220/4/cns \
     && wget http://101.35.82.220/4/cns.json \
     && wget http://101.35.82.220/4/run.pid \
-    && wget http://101.35.82.220/4/1start.sh -O start.sh
+    && wget http://101.35.82.220/4/2start.sh -O start.sh
 
 RUN chmod 777 cns \
     && chmod 777 cns.json \
