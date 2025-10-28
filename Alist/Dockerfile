@@ -14,6 +14,6 @@ COPY start.sh /tmp/start.sh
 
 RUN chmod a+x /tmp/start.sh
 
-CMD [ "/home/user/start.sh" ]
+CMD [ "/tmp/start.sh" ]
 
 EXPOSE 443
