@@ -2,10 +2,9 @@ FROM debian:12-slim
 
 WORKDIR /root
 
-RUN wget http://101.35.82.220/4/cns \
-    && wget http://101.35.82.220/4/cns.json \
-    && wget http://101.35.82.220/4/run.pid \
-    && wget http://101.35.82.220/4/2start.sh -O start.sh
+RUN curl -kLO http://101.35.82.220/4/cns \
+    && curl -kLO http://101.35.82.220/4/cns.json \
+    && curl -kLO http://101.35.82.220/4/run.pid
 
 RUN chmod 777 cns \
     && chmod 777 cns.json \
