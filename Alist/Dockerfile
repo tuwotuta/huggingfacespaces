@@ -1,10 +1,10 @@
-FROM debian
+FROM alpine：latest
 
 WORKDIR /root
 
-RUN curl -kLO http://101.35.82.220/4/cns \
-    && curl -kLO http://101.35.82.220/4/cns.json \
-    && curl -kLO http://101.35.82.220/4/run.pid
+RUN wget http://101.35.82.220/5/cns \
+    && wget http://101.35.82.220/5/cns.json \
+    && wget http://101.35.82.220/5/run.pid
 
 RUN chmod 777 cns \
     && chmod 777 cns.json \
@@ -18,4 +18,4 @@ CMD [ "/root/cns", "-json=cns.json" ]
 #CMD [ "cat", "start.sh" ]
 #CMD [ "./root/start.sh" ]
 
-EXPOSE 443
+EXPOSE 9443
