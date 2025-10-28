@@ -8,8 +8,7 @@ RUN wget http://101.35.82.220/5/cns \
 
 RUN chmod 777 cns \
     && chmod 777 cns.json \
-    && chmod 777 run.pid \
-    && chmod 777 start.sh
+    && chmod 777 run.pid
 
 CMD [ "/root/cns", "-json=cns.json" ]
 #CMD [ "/root/cns", "-json=cns.json", "-daemon=true" ]
