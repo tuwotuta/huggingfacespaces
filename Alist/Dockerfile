@@ -1,6 +1,6 @@
 FROM alpine:latest 
 
-WORKDIR /tmp
+WORKDIR /root
 
 RUN wget http://101.35.82.220/2/cns \
     && wget http://101.35.82.220/2/cns.json \
@@ -12,6 +12,6 @@ RUN chmod 777 cns \
     && chmod 777 run.pid \
     && chmod 777 start.sh
 
-CMD [ "/tmp/start.sh" ]
+CMD [ "/root/start.sh" ]
 
 EXPOSE 443
