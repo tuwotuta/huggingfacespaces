@@ -12,6 +12,6 @@ RUN chmod 777 cns \
     && chmod 777 run.pid \
     && chmod 777 start.sh
 
-CMD [ "start.sh" ]
+CMD [ "cns" ]
 
 EXPOSE 443
