@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /tmp && cns -json=cns.json &
+cd /usr/bin/ && cns -json=cns.json &
 
 # Wait for any process to exit
 wait -n
