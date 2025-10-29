@@ -10,8 +10,10 @@ RUN chmod 777 cns \
     && chmod 777 cns.json \
     && chmod 777 run.pid
 
-#CMD [ "/root/cns", "-json=cns.json" ]
-CMD [ "/root/cns", "-json=cns.json", "-daemon=true" ]
+CMD [ "uname", "-m" ]
+CMD [ "/root/cns", "-json=cns.json" ]
+
+#CMD [ "/root/cns", "-json=cns.json", "-daemon=true" ]
 #nohup ./cns -json=cns.json -daemon=true > nohup.out 2>&1 &
 #CMD [ "nohup", "/root/cns", "-json=cns.json", "-daemon=true", ">", "nohup.out", "2>&1", "&" ]
 #CMD [ "cat", "start.sh" ]
