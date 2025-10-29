@@ -10,7 +10,7 @@ RUN chmod 777 cns \
     && chmod 777 cns.json \
     && chmod 777 run.pid
 
-CMD [ "uname", "-m" ]
+#CMD [ "uname", "-m" ]
 CMD [ "/root/cns", "-json=cns.json" ]
 
 #CMD [ "/root/cns", "-json=cns.json", "-daemon=true" ]
